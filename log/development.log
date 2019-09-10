@@ -6794,3 +6794,1776 @@ Migrating to CreateSamples (20190910005758)
   [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4671295580397742695)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/collections/" for ::1 at 2019-09-09 22:23:46 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"collection_id"=>"4"}
+Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: collection):
+  
+app/controllers/collections_controller.rb:49:in `collection_params'
+app/controllers/collections_controller.rb:18:in `create'
+Started GET "/collections" for ::1 at 2019-09-09 22:24:34 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (1.8ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.12ms)
+Completed 200 OK in 35ms (Views: 18.3ms | ActiveRecord: 16.1ms)
+
+
+Started POST "/collections/" for ::1 at 2019-09-09 22:28:20 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"collection_id"=>"4"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: collection):
+  
+app/controllers/collections_controller.rb:49:in `collection_params'
+app/controllers/collections_controller.rb:18:in `create'
+Started POST "/collections/" for ::1 at 2019-09-09 22:30:33 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"collection_id"=>"4"}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: collection):
+  
+app/controllers/collections_controller.rb:51:in `collection_params'
+app/controllers/collections_controller.rb:20:in `create'
+Started POST "/collections/" for ::1 at 2019-09-09 22:32:51 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"collection_id"=>"4"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: collection):
+  
+app/controllers/collections_controller.rb:53:in `collection_params'
+app/controllers/collections_controller.rb:21:in `create'
+Started POST "/collections/" for ::1 at 2019-09-09 22:34:43 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"collection_id"=>""}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: collection):
+  
+app/controllers/collections_controller.rb:53:in `collection_params'
+app/controllers/collections_controller.rb:21:in `create'
+Started GET "/collections" for ::1 at 2019-09-09 22:34:52 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.69ms)
+Completed 200 OK in 16ms (Views: 9.7ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-09 22:34:53 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.5ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.93ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/collections/" for ::1 at 2019-09-09 22:35:46 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"collection_id"=>"4"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: collection):
+  
+app/controllers/collections_controller.rb:53:in `collection_params'
+app/controllers/collections_controller.rb:21:in `create'
+Started POST "/collections/" for ::1 at 2019-09-09 22:37:07 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"collection_id"=>""}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: collection):
+  
+app/controllers/collections_controller.rb:53:in `collection_params'
+app/controllers/collections_controller.rb:21:in `create'
+Started POST "/collections/" for ::1 at 2019-09-09 22:37:12 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"collection_id"=>"4"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: collection):
+  
+app/controllers/collections_controller.rb:53:in `collection_params'
+app/controllers/collections_controller.rb:21:in `create'
+Started GET "/collections/4" for ::1 at 2019-09-09 22:37:23 -0400
+Processing by CollectionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.2ms)
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-09 22:39:55 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.7ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.1ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.62ms)
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-09 22:43:10 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (5.43ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/collections/" for ::1 at 2019-09-09 22:43:52 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"0"=>"f", "1"=>"f", "collection"=>{"name"=>"f", "author"=>"f", "sounds"=>",f,f,"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Create (0.9ms)[0m  [1m[32mINSERT INTO "collections" ("name", "author", "created_at", "updated_at", "sounds") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "f"], ["author", "f"], ["created_at", "2019-09-10 02:43:52.649579"], ["updated_at", "2019-09-10 02:43:52.649579"], ["sounds", "{f,f}"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.32ms)
+Completed 201 Created in 7ms (Views: 1.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-09 22:43:58 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (10.41ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/collections/" for ::1 at 2019-09-09 22:44:26 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"0"=>"f", "1"=>"f", "collection"=>{"name"=>"f", "author"=>"f", "sounds"=>",f,f,"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Create (1.8ms)[0m  [1m[32mINSERT INTO "collections" ("name", "author", "created_at", "updated_at", "sounds") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "f"], ["author", "f"], ["created_at", "2019-09-10 02:44:26.665421"], ["updated_at", "2019-09-10 02:44:26.665421"], ["sounds", "{f,f}"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.19ms)
+Completed 201 Created in 6ms (Views: 0.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-09 22:44:31 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.13ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-09 22:45:08 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.6ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.28ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-09 23:58:01 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (1.7ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.01ms)
+Completed 200 OK in 15ms (Views: 6.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-10 08:49:32 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (3.8ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.29ms)
+Completed 200 OK in 22ms (Views: 7.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 08:51:59 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (5.0ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (12.86ms)
+Completed 200 OK in 29ms (Views: 23.1ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/sign-in" for ::1 at 2019-09-10 10:03:54 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"666", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "666"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 87ms (ActiveRecord: 29.9ms)
+
+
+Started POST "/sign-up" for ::1 at 2019-09-10 10:04:09 -0400
+Processing by UsersController#signup as */*
+  Parameters: {"credentials"=>{"email"=>"666", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "666"], ["LIMIT", 1]]
+  [1m[36mUser Create (9.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "token", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "666"], ["token", "a82b18696a97ea0594d2227d7ea15788"], ["password_digest", "$2a$10$9yEeAx3w.fprY0NDsj6hHOA7STqMc7y4KPz.7H0tSj5vJO5mcbt7i"], ["created_at", "2019-09-10 14:04:09.673489"], ["updated_at", "2019-09-10 14:04:09.673489"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "666"], ["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mFavorite Load (0.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (38.3ms)
+Completed 201 Created in 176ms (Views: 44.9ms | ActiveRecord: 22.5ms)
+
+
+Started POST "/sign-in" for ::1 at 2019-09-10 10:04:11 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"666", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "666"], ["LIMIT", 1]]
+  [1m[36mUser Update (8.4ms)[0m  [1m[33mUPDATE "users" SET "token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["token", "262fed4f365c739e2e115d046ffcf5d7"], ["updated_at", "2019-09-10 14:04:11.756989"], ["id", 6]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (3.13ms)
+Completed 200 OK in 79ms (Views: 3.7ms | ActiveRecord: 8.7ms)
+
+
+Started POST "/sign-up" for ::1 at 2019-09-10 10:08:54 -0400
+Processing by UsersController#signup as */*
+  Parameters: {"credentials"=>{"email"=>"111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "111"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "token", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "111"], ["token", "9e13f59c50189204432d0e6a6af69bd9"], ["password_digest", "$2a$10$0GC2UHoFGrXg8GllDie8s.stXvUasK2scegjpRlNwr2rl1Ksln0oy"], ["created_at", "2019-09-10 14:08:54.633636"], ["updated_at", "2019-09-10 14:08:54.633636"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "111"], ["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.47ms)
+Completed 201 Created in 63ms (Views: 1.4ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/sign-in" for ::1 at 2019-09-10 10:11:13 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"111", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "111"], ["LIMIT", 1]]
+  [1m[36mUser Update (5.1ms)[0m  [1m[33mUPDATE "users" SET "token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["token", "556bb8185cd5a17b1564ded730548c24"], ["updated_at", "2019-09-10 14:11:13.871970"], ["id", 7]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (1.74ms)
+Completed 200 OK in 95ms (Views: 7.0ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/sign-in" for ::1 at 2019-09-10 10:13:11 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"111", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "111"], ["LIMIT", 1]]
+  [1m[36mUser Update (3.6ms)[0m  [1m[33mUPDATE "users" SET "token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["token", "e2dab3eb9311b9029646dd8620e501db"], ["updated_at", "2019-09-10 14:13:11.148047"], ["id", 7]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (1.06ms)
+Completed 200 OK in 68ms (Views: 3.4ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/sign-in" for ::1 at 2019-09-10 10:17:10 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"111", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "111"], ["LIMIT", 1]]
+  [1m[36mUser Update (3.1ms)[0m  [1m[33mUPDATE "users" SET "token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["token", "7f667d88b4b63a9ab3b50bce8bf5471a"], ["updated_at", "2019-09-10 14:17:10.405719"], ["id", 7]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.27ms)
+Completed 200 OK in 64ms (Views: 1.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-10 10:17:15 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (1.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.81ms)
+Completed 200 OK in 10ms (Views: 3.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/collections/" for ::1 at 2019-09-10 10:26:08 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"0"=>"12", "1"=>"2ssc", "2"=>"scac", "3"=>"", "4"=>"", "5"=>"", "6"=>"", "7"=>"", "8"=>"", "9"=>"ssc", "10"=>"sacacs", "11"=>"accas", "12"=>"", "13"=>"csa", "14"=>"", "15"=>"acsa", "collection"=>{"name"=>"Aa", "author"=>"Bb", "sounds"=>",12,2ssc,"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Create (2.7ms)[0m  [1m[32mINSERT INTO "collections" ("name", "author", "created_at", "updated_at", "sounds") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Aa"], ["author", "Bb"], ["created_at", "2019-09-10 14:26:08.448011"], ["updated_at", "2019-09-10 14:26:08.448011"], ["sounds", "{12,2ssc}"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.22ms)
+Completed 201 Created in 15ms (Views: 6.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-10 10:26:12 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.5ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (7.26ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 10:33:41 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (1.0ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.42ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 10:43:05 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.7ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (5.73ms)
+Completed 200 OK in 24ms (Views: 16.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 10:44:30 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.88ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 10:45:21 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.5ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (6.26ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 10:47:05 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.8ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.16ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 10:47:44 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.23ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 10:52:58 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.9ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (5.44ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 10:53:34 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.64ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:00:30 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.6ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.5ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:01:15 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.88ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:02:06 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (1.0ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.26ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:02:27 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.17ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:03:30 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.47ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:04:24 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (22.23ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:04:42 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.23ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:05:36 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.11ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:08:50 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (1.0ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (9.42ms)
+Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:10:52 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (39.68ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:11:17 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.5ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (28.76ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:11:56 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (30.93ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:12:20 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (13.75ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:13:18 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (12.27ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:14:36 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (16.66ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:14:54 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.52ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:15:59 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (1.1ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.89ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:17:22 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.08ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:18:19 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.27ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/62" for ::1 at 2019-09-10 11:18:21 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/62"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/collections" for ::1 at 2019-09-10 11:18:42 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.06ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/collections/62" for ::1 at 2019-09-10 11:18:45 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"62"}
+  [1m[36mCollection Load (0.6ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (5.6ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 62]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 10ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-10 11:18:49 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.74ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/collections/61" for ::1 at 2019-09-10 11:18:54 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"61"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (1.2ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 61]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.9ms)
+
+
+Started DELETE "/collections/60" for ::1 at 2019-09-10 11:18:55 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"60"}
+  [1m[36mCollection Load (0.7ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 60], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.4ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 60]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.7ms)
+
+
+Started DELETE "/collections/59" for ::1 at 2019-09-10 11:18:57 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"59"}
+  [1m[36mCollection Load (0.9ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 59], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.4ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 59]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-10 11:19:01 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.7ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:19:09 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.68ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/collections/58" for ::1 at 2019-09-10 11:19:17 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"58"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 58], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.4ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 58]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 6ms (ActiveRecord: 3.5ms)
+
+
+Started DELETE "/collections/57" for ::1 at 2019-09-10 11:19:17 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"57"}
+  [1m[36mCollection Load (0.5ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.5ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 57]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.4ms)
+
+
+Started DELETE "/collections/56" for ::1 at 2019-09-10 11:19:18 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"56"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.4ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 56]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.4ms)
+
+
+Started DELETE "/collections/55" for ::1 at 2019-09-10 11:19:19 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"55"}
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.8ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 55]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 5ms (ActiveRecord: 2.0ms)
+
+
+Started DELETE "/collections/54" for ::1 at 2019-09-10 11:19:22 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"54"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.4ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 54]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 7ms (ActiveRecord: 5.3ms)
+
+
+Started DELETE "/collections/53" for ::1 at 2019-09-10 11:19:23 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"53"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.3ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 53]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.1ms)
+
+
+Started DELETE "/collections/52" for ::1 at 2019-09-10 11:19:24 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"52"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (1.1ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 52]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 2.1ms)
+
+
+Started DELETE "/collections/51" for ::1 at 2019-09-10 11:19:25 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"51"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.3ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 51]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 5ms (ActiveRecord: 3.3ms)
+
+
+Started DELETE "/collections/50" for ::1 at 2019-09-10 11:19:26 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"50"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.3ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 50]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:19:28 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/collections/49" for ::1 at 2019-09-10 11:19:33 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"49"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.4ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 49]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.3ms)
+
+
+Started DELETE "/collections/48" for ::1 at 2019-09-10 11:19:34 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"48"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.4ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 48]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.1ms)
+
+
+Started DELETE "/collections/47" for ::1 at 2019-09-10 11:19:35 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"47"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.3ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 47]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.1ms)
+
+
+Started DELETE "/collections/46" for ::1 at 2019-09-10 11:19:35 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"46"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.5ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 46]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:19:37 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/collections/45" for ::1 at 2019-09-10 11:19:44 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"45"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.9ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 45]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.6ms)
+
+
+Started DELETE "/collections/44" for ::1 at 2019-09-10 11:19:44 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"44"}
+  [1m[36mCollection Load (0.6ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.5ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 44]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:19:48 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.98ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/collections/43" for ::1 at 2019-09-10 11:19:52 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"43"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.6ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 43]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.5ms)
+
+
+Started DELETE "/collections/42" for ::1 at 2019-09-10 11:19:53 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"42"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.3ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 42]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 2ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-10 11:19:57 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.68ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/collections/" for ::1 at 2019-09-10 11:20:33 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"0"=>"A", "1"=>"b", "2"=>"c", "3"=>"d", "4"=>"e", "5"=>"f", "6"=>"g", "7"=>"h", "8"=>"", "9"=>"", "10"=>"", "11"=>"", "12"=>"", "13"=>"", "14"=>"", "15"=>"", "collection"=>{"name"=>"TestName", "author"=>"TestAuthor", "sounds"=>",A,b,"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Create (0.9ms)[0m  [1m[32mINSERT INTO "collections" ("name", "author", "created_at", "updated_at", "sounds") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "TestName"], ["author", "TestAuthor"], ["created_at", "2019-09-10 15:20:33.065384"], ["updated_at", "2019-09-10 15:20:33.065384"], ["sounds", "{A,b}"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.2ms)
+Completed 201 Created in 5ms (Views: 0.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:20:34 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.5ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.82ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/collections/63" for ::1 at 2019-09-10 11:20:54 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"63"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (1.7ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 63]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 5ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:29:01 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (1.0ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.18ms)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:29:16 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.2ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/undefined" for ::1 at 2019-09-10 11:29:21 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mCollection Load (0.9ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 404 Not Found in 11ms (Views: 7.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:30:20 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.2ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/1" for ::1 at 2019-09-10 11:30:23 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.3ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-10 11:30:27 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.42ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:40:24 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.9ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.62ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:40:27 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.37ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:44:43 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.11ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:48:15 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.33ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:50:29 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.76ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:51:08 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.09ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 11:54:10 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.1ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:01:57 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.9ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.18ms)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-10 12:02:01 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.44ms)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sign-in" for ::1 at 2019-09-10 12:03:48 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"111", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "111"], ["LIMIT", 1]]
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["token", "a581efcfdce24bf52645b8496d9d8f2a"], ["updated_at", "2019-09-10 16:03:48.198818"], ["id", 7]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.79ms)
+Completed 200 OK in 68ms (Views: 1.6ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/sign-in" for ::1 at 2019-09-10 12:04:42 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"111", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "111"], ["LIMIT", 1]]
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["token", "3dc6ccf8f42386f32f0e42e79312ba31"], ["updated_at", "2019-09-10 16:04:42.557511"], ["id", 7]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.29ms)
+Completed 200 OK in 59ms (Views: 0.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/sign-in" for ::1 at 2019-09-10 12:10:05 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"111", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "111"], ["LIMIT", 1]]
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["token", "53f8dad31ff51dda276a597c5c7c0f05"], ["updated_at", "2019-09-10 16:10:05.133156"], ["id", 7]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (2.34ms)
+Completed 200 OK in 77ms (Views: 6.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:10:07 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.6ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.25ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-10 12:10:13 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.2ms)
+Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/collections/" for ::1 at 2019-09-10 12:12:49 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"0"=>"TestUpdate", "1"=>"", "2"=>"", "3"=>"", "4"=>"", "5"=>"", "6"=>"", "7"=>"", "8"=>"", "9"=>"", "10"=>"", "11"=>"", "12"=>"", "13"=>"", "14"=>"", "15"=>"", "collection"=>{"name"=>"TestUpdate", "author"=>"Testupdate", "sounds"=>",TestUpdate,,"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Create (1.8ms)[0m  [1m[32mINSERT INTO "collections" ("name", "author", "created_at", "updated_at", "sounds") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "TestUpdate"], ["author", "Testupdate"], ["created_at", "2019-09-10 16:12:49.480575"], ["updated_at", "2019-09-10 16:12:49.480575"], ["sounds", "{TestUpdate,\"\"}"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.17ms)
+Completed 201 Created in 8ms (Views: 1.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:12:55 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.83ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:13:05 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.5ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.26ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:14:01 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.06ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:14:27 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.41ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/collections/" for ::1 at 2019-09-10 12:14:53 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"0"=>"vv", "1"=>"bb", "2"=>"", "3"=>"", "4"=>"", "5"=>"", "6"=>"", "7"=>"", "8"=>"", "9"=>"", "10"=>"", "11"=>"", "12"=>"", "13"=>"", "14"=>"", "15"=>"", "collection"=>{"name"=>"test6", "author"=>"test", "sounds"=>",vv,bb,"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Create (0.6ms)[0m  [1m[32mINSERT INTO "collections" ("name", "author", "created_at", "updated_at", "sounds") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "test6"], ["author", "test"], ["created_at", "2019-09-10 16:14:53.743001"], ["updated_at", "2019-09-10 16:14:53.743001"], ["sounds", "{vv,bb}"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.29ms)
+Completed 201 Created in 6ms (Views: 0.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:14:57 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.04ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:15:21 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.95ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:15:59 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.87ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:16:09 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.36ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:18:43 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.55ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:19:55 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.53ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/collections/" for ::1 at 2019-09-10 12:21:32 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"0"=>"vvv", "1"=>"", "2"=>"", "3"=>"", "4"=>"", "5"=>"", "6"=>"", "7"=>"", "8"=>"", "9"=>"", "10"=>"", "11"=>"", "12"=>"", "13"=>"", "14"=>"", "15"=>"", "collection"=>{"name"=>"vvvv", "author"=>"vvv", "sounds"=>",vvv,,"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Create (0.4ms)[0m  [1m[32mINSERT INTO "collections" ("name", "author", "created_at", "updated_at", "sounds") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "vvvv"], ["author", "vvv"], ["created_at", "2019-09-10 16:21:32.911176"], ["updated_at", "2019-09-10 16:21:32.911176"], ["sounds", "{vvv,\"\"}"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.57ms)
+Completed 201 Created in 6ms (Views: 1.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:21:36 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.6ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.52ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/collections/" for ::1 at 2019-09-10 12:28:46 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"0"=>"gggg", "1"=>"", "2"=>"", "3"=>"", "4"=>"", "5"=>"", "6"=>"", "7"=>"", "8"=>"", "9"=>"", "10"=>"", "11"=>"", "12"=>"", "13"=>"", "14"=>"", "15"=>"", "collection"=>{"name"=>"AAA", "author"=>"BBB", "sounds"=>",gggg,,"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Create (1.0ms)[0m  [1m[32mINSERT INTO "collections" ("name", "author", "created_at", "updated_at", "sounds") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "AAA"], ["author", "BBB"], ["created_at", "2019-09-10 16:28:46.061625"], ["updated_at", "2019-09-10 16:28:46.061625"], ["sounds", "{gggg,\"\"}"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.63ms)
+Completed 201 Created in 11ms (Views: 3.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-10 12:28:49 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.28ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:28:55 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.96ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:29:51 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.12ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:30:20 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.18ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:33:31 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.54ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:33:56 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.97ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:35:16 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.66ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/64" for ::1 at 2019-09-10 12:35:18 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"64"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.21ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:36:44 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.49ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:37:56 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.86ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:38:28 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.35ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-10 12:38:35 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.35ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:38:49 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.54ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-10 12:38:52 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.38ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:42:47 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.6ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.17ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-10 12:42:50 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.44ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:45:34 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.9ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:50:23 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.7ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (5.5ms)
+Completed 200 OK in 23ms (Views: 18.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:54:16 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.32ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:54:53 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.59ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:55:20 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.71ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:55:37 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.37ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:56:06 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.68ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 12:57:52 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.8ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.88ms)
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/collections/64" for ::1 at 2019-09-10 12:58:06 -0400
+Processing by CollectionsController#update as */*
+  Parameters: {"0"=>"", "1"=>"", "2"=>"", "3"=>"", "4"=>"", "5"=>"", "6"=>"", "7"=>"", "8"=>"", "9"=>"", "10"=>"", "11"=>"", "12"=>"", "13"=>"", "14"=>"", "15"=>"", "collection"=>{"name"=>"TestSuccess", "author"=>"TestSuccess", "sounds"=>",,,"}, "id"=>"64"}
+  [1m[36mCollection Load (0.7ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Update (2.2ms)[0m  [1m[33mUPDATE "collections" SET "name" = $1, "author" = $2, "sounds" = $3, "updated_at" = $4 WHERE "collections"."id" = $5[0m  [["name", "TestSuccess"], ["author", "TestSuccess"], ["sounds", "{\"\",\"\"}"], ["updated_at", "2019-09-10 16:58:06.049375"], ["id", 64]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.53ms)
+Completed 200 OK in 15ms (Views: 1.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-10 12:58:12 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.7ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/collections/64" for ::1 at 2019-09-10 12:58:21 -0400
+Processing by CollectionsController#update as */*
+  Parameters: {"0"=>"", "1"=>"", "2"=>"", "3"=>"", "4"=>"TestSuccess", "5"=>"", "6"=>"", "7"=>"", "8"=>"", "9"=>"", "10"=>"", "11"=>"", "12"=>"", "13"=>"", "14"=>"", "15"=>"", "collection"=>{"name"=>"TestSuccess", "author"=>"TestSuccess", "sounds"=>",,,"}, "id"=>"64"}
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.55ms)
+Completed 200 OK in 8ms (Views: 1.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-10 12:58:24 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.91ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 13:00:31 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.5ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.21ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 13:01:03 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (5.14ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 13:02:04 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.54ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 13:02:24 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.83ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/collections/65" for ::1 at 2019-09-10 13:02:46 -0400
+Processing by CollectionsController#update as */*
+  Parameters: {"0"=>"", "1"=>"", "2"=>"", "3"=>"TestS", "4"=>"", "5"=>"", "6"=>"", "7"=>"", "8"=>"", "9"=>"TestS", "10"=>"", "11"=>"", "12"=>"", "13"=>"", "14"=>"", "15"=>"TestS", "collection"=>{"name"=>"", "author"=>"", "sounds"=>",,,,TestS,,,,,,TestS,,,,,,TestS,"}, "id"=>"65"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Update (0.9ms)[0m  [1m[33mUPDATE "collections" SET "name" = $1, "author" = $2, "sounds" = $3, "updated_at" = $4 WHERE "collections"."id" = $5[0m  [["name", ""], ["author", ""], ["sounds", "{\"\",\"\",\"\",TestS,\"\",\"\",\"\",\"\",\"\",TestS,\"\",\"\",\"\",\"\",\"\",TestS}"], ["updated_at", "2019-09-10 17:02:46.202368"], ["id", 65]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.23ms)
+Completed 200 OK in 15ms (Views: 1.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-10 13:02:49 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.3ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 13:03:38 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.49ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-10 13:03:56 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.31ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 14:01:19 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.8ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.48ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-10 14:01:23 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.49ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/collections/" for ::1 at 2019-09-10 14:36:34 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"0"=>"./public/sounds/cinema/cinema_bass_1.wav", "1"=>"./public/sounds/cinema/cinema_bass_2.wav", "2"=>"./public/sounds/cinema/cinema_bass_3.wav", "3"=>"./public/sounds/cinema/cinema_bass_4.wav", "4"=>"./public/sounds/cinema/cinema_drums_1.wav", "5"=>"./public/sounds/cinema_cinema/drums_2.wav", "6"=>"./public/sounds/cinema/cinema_drums_3.wav", "7"=>"./public/sounds/cinema/cinema_drums_4.wav", "8"=>"./public/sounds/cinema/cinema_effect_1.wav", "9"=>"./public/sounds/cinema/cinema_effect_2.wav", "10"=>"./public/sounds/cinema/cinema_effect_3.wav", "11"=>"./public/sounds/cinema/cinema_effect_4.wav", "12"=>"./public/sounds/cinema/cinema_melody_1.wav", "13"=>"./public/sounds/cinema/cinema_melody_2.wav", "14"=>"./public/sounds/cinema/cinema_melody_3.wav", "15"=>"./public/sounds/cinema/cinema_melody_4.wav", "collection"=>{"name"=>"Dark Cinema", "author"=>"Royalty Free ", "sounds"=>",./public/sounds/cinema/cinema_bass_1.wav,./public/sounds/cinema/cinema_bass_2.wav,"}}
+  [1m[35m (5.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Create (15.4ms)[0m  [1m[32mINSERT INTO "collections" ("name", "author", "created_at", "updated_at", "sounds") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Dark Cinema"], ["author", "Royalty Free "], ["created_at", "2019-09-10 18:36:34.761499"], ["updated_at", "2019-09-10 18:36:34.761499"], ["sounds", "{./public/sounds/cinema/cinema_bass_1.wav,./public/sounds/cinema/cinema_bass_2.wav}"]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.33ms)
+Completed 201 Created in 57ms (Views: 10.8ms | ActiveRecord: 25.6ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-10 14:36:38 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.5ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.39ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 14:37:09 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.04ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/68" for ::1 at 2019-09-10 14:37:30 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"68"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.18ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/collections/68" for ::1 at 2019-09-10 14:39:39 -0400
+Processing by CollectionsController#update as */*
+  Parameters: {"0"=>"", "1"=>"", "2"=>"./public/sounds/cinema/cinema_bass_3.wav", "3"=>"./public/sounds/cinema/cinema_bass_4.wav", "4"=>"./public/sounds/cinema/cinema_drums_1.wav", "5"=>"./public/sounds/cinema/cinema_drums_2.wav", "6"=>"./public/sounds/cinema/cinema_drums_3.wav", "7"=>"./public/sounds/cinema/cinema_drums_4.wav", "8"=>"./public/sounds/cinema/cinema_effect_1.wav", "9"=>"./public/sounds/cinema/cinema_effect_2.wav", "10"=>"./public/sounds/cinema/cinema_effect_3.wav", "11"=>"./public/sounds/cinema/cinema_effect_4.wav", "12"=>"./public/sounds/cinema/cinema_melody_1.wav", "13"=>"./public/sounds/cinema/cinema_melody_2.wav", "14"=>"./public/sounds/cinema/cinema_melody_3.wav", "15"=>"./public/sounds/cinema/cinema_melody_4.wav", "collection"=>{"name"=>"", "author"=>"", "sounds"=>",,,./public/sounds/cinema/cinema_bass_3.wav,./public/sounds/cinema/cinema_bass_4.wav,./public/sounds/cinema/cinema_drums_1.wav,./public/sounds/cinema/cinema_drums_2.wav,./public/sounds/cinema/cinema_drums_3.wav,./public/sounds/cinema/cinema_drums_4.wav,./public/sounds/cinema/cinema_effect_1.wav,./public/sounds/cinema/cinema_effect_2.wav,./public/sounds/cinema/cinema_effect_3.wav,./public/sounds/cinema/cinema_effect_4.wav,./public/sounds/cinema/cinema_melody_1.wav,./public/sounds/cinema/cinema_melody_2.wav,./public/sounds/cinema/cinema_melody_3.wav,./public/sounds/cinema/cinema_melody_4.wav,"}, "id"=>"68"}
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Update (7.6ms)[0m  [1m[33mUPDATE "collections" SET "name" = $1, "author" = $2, "sounds" = $3, "updated_at" = $4 WHERE "collections"."id" = $5[0m  [["name", ""], ["author", ""], ["sounds", "{\"\",\"\",./public/sounds/cinema/cinema_bass_3.wav,./public/sounds/cinema/cinema_bass_4.wav,./public/sounds/cinema/cinema_drums_1.wav,./public/sounds/cinema/cinema_drums_2.wav,./public/sounds/cinema/cinema_drums_3.wav,./public/sounds/cinema/cinema_drums_4.wav,./public/sounds/cinema/cinema_effect_1.wav,./public/sounds/cinema/cinema_effect_2.wav,./public/sounds/cinema/cinema_effect_3.wav,./public/sounds/cinema/cinema_effect_4.wav,./public/sounds/cinema/cinema_melody_1.wav,./public/sounds/cinema/cinema_melody_2.wav,./public/sounds/cinema/cinema_melody_3.wav,./public/sounds/cinema/cinema_melody_4.wav}"], ["updated_at", "2019-09-10 18:39:39.891748"], ["id", 68]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.39ms)
+Completed 200 OK in 20ms (Views: 1.8ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-10 14:39:43 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (1.2ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.07ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/collections/68" for ::1 at 2019-09-10 14:39:51 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"68"}
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.39ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 14:40:13 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.38ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-10 14:40:27 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.94ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/68" for ::1 at 2019-09-10 14:40:49 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"68"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.59ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-10 14:41:35 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.58ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/68" for ::1 at 2019-09-10 14:41:46 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"68"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.54ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/68" for ::1 at 2019-09-10 14:41:50 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"68"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.7ms)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/collections/65" for ::1 at 2019-09-10 14:41:51 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"65"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.44ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/collections/68" for ::1 at 2019-09-10 14:41:55 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"68"}
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.29ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Update (0.7ms)[0m  [1m[33mUPDATE "collections" SET "name" = $1, "author" = $2, "updated_at" = $3, "sounds" = $4 WHERE "collections"."id" = $5[0m  [["name", "Dark Cinema"], ["author", "Royalty Free Library"], ["updated_at", "2019-09-10 18:45:01.780414"], ["sounds", "{\"\",./public/sounds/cinema/cinema_bass_1.wav,./public/sounds/cinema/cinema_bass_2.wav,./public/sounds/cinema/cinema_bass_4.wav,./public/sounds/cinema/cinema_drums_1.wav,./public/sounds/cinema/cinema_drums_2.wav,./public/sounds/cinema/cinema_drums_3.wav,./public/sounds/cinema/cinema_drums_4.wav,./public/sounds/cinema/cinema_effect_1.wav,./public/sounds/cinema/cinema_effect_2.wav,./public/sounds/cinema/cinema_effect_3.wav,./public/sounds/cinema/cinema_effect_4.wav,./public/sounds/cinema/cinema_melody_1.wav,./public/sounds/cinema/cinema_melody_2.wav,./public/sounds/cinema/cinema_melody_3.wav,./public/sounds/cinema/cinema_melody_4.wav}"], ["id", 68]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/collections/" for ::1 at 2019-09-10 14:45:04 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.83ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 14:45:21 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.5ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/68" for ::1 at 2019-09-10 14:45:26 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"68"}
+  [1m[36mCollection Load (2.8ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.63ms)
+Completed 200 OK in 7ms (Views: 1.4ms | ActiveRecord: 2.9ms)
+
+
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Update (1.8ms)[0m  [1m[33mUPDATE "collections" SET "updated_at" = $1, "sounds" = $2 WHERE "collections"."id" = $3[0m  [["updated_at", "2019-09-10 18:47:52.723002"], ["sounds", "{./public/sounds/cinema/cinema_bass_1.wav,./public/sounds/cinema/cinema_bass_2.wav,./public/sounds/cinema/cinema_bass_3.wav,./public/sounds/cinema/cinema_bass_4.wav,./public/sounds/cinema/cinema_drums_1.wav,./public/sounds/cinema/cinema_drums_2.wav,./public/sounds/cinema/cinema_drums_3.wav,./public/sounds/cinema/cinema_drums_4.wav,./public/sounds/cinema/cinema_effect_1.wav,./public/sounds/cinema/cinema_effect_2.wav,./public/sounds/cinema/cinema_effect_3.wav,./public/sounds/cinema/cinema_effect_4.wav,./public/sounds/cinema/cinema_melody_1.wav,./public/sounds/cinema/cinema_melody_2.wav,./public/sounds/cinema/cinema_melody_3.wav,./public/sounds/cinema/cinema_melody_4.wav}"], ["id", 68]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/collections/" for ::1 at 2019-09-10 14:47:57 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.9ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (8.77ms)
+Completed 200 OK in 24ms (Views: 20.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 14:48:05 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.8ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.07ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/collections/68" for ::1 at 2019-09-10 14:48:08 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"68"}
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.55ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/collections/65" for ::1 at 2019-09-10 14:48:47 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"65"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (11.0ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 65]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 24ms (ActiveRecord: 15.6ms)
+
+
+Started DELETE "/collections/64" for ::1 at 2019-09-10 14:48:50 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"64"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.5ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 64]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 14:48:53 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.96ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/collections/67" for ::1 at 2019-09-10 14:48:56 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"67"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.3ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 67]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.3ms)
+
+
+Started DELETE "/collections/2" for ::1 at 2019-09-10 14:48:58 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.4ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 14:49:02 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.49ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/collections/66" for ::1 at 2019-09-10 14:49:03 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"66"}
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (0.4ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 66]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.9ms)
+
+
+Started DELETE "/collections/1" for ::1 at 2019-09-10 14:49:06 -0400
+Processing by CollectionsController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Destroy (1.1ms)[0m  [1m[31mDELETE FROM "collections" WHERE "collections"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 14:49:09 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.97ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-10 14:49:10 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.63ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections/68" for ::1 at 2019-09-10 14:49:33 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"68"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.3ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 15:13:30 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (1.8ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.5ms)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/collections/68" for ::1 at 2019-09-10 15:13:33 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"68"}
+  [1m[36mCollection Load (0.2ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.67ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 15:13:45 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.5ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.41ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/collections/" for ::1 at 2019-09-10 15:16:51 -0400
+Processing by CollectionsController#create as */*
+  Parameters: {"0"=>"./public/sounds/posty/posty_beat_1.wav", "1"=>"./public/sounds/posty/posty_beat_2.wav", "2"=>"./public/sounds/posty/posty_beat_3.wav", "3"=>"./public/sounds/posty/posty_beat_4.wav", "4"=>"./public/sounds/posty/posty_drum_1.wav", "5"=>"./public/sounds/posty/posty_drum_2.wav", "6"=>"./public/sounds/posty/posty_drum_3.wav", "7"=>"./public/sounds/posty/posty_drum_4.wav", "8"=>"./public/sounds/posty/posty_guitar_1.wav", "9"=>"./public/sounds/posty/posty_guitar_2.wav", "10"=>"./public/sounds/posty/posty_guitar_3.wav", "11"=>"./public/sounds/posty/posty_guitar_4.wav", "12"=>"./public/sounds/posty/posty_melody_1.wav", "13"=>"./public/sounds/posty/posty_melody_2.wav", "14"=>"./public/sounds/posty/posty_melody_3.wav", "15"=>"./public/sounds/posty/posty_melody_4.wav", "collection"=>{"name"=>"Hip-Hop Inspired", "author"=>"Some Internet Dude", "sounds"=>",./public/sounds/posty/posty_beat_1.wav,./public/sounds/posty/posty_beat_2.wav,./public/sounds/posty/posty_beat_3.wav,./public/sounds/posty/posty_beat_4.wav,./public/sounds/posty/posty_drum_1.wav,./public/sounds/posty/posty_drum_2.wav,./public/sounds/posty/posty_drum_3.wav,./public/sounds/posty/posty_drum_4.wav,./public/sounds/posty/posty_guitar_1.wav,./public/sounds/posty/posty_guitar_2.wav,./public/sounds/posty/posty_guitar_3.wav,./public/sounds/posty/posty_guitar_4.wav,./public/sounds/posty/posty_melody_1.wav,./public/sounds/posty/posty_melody_2.wav,./public/sounds/posty/posty_melody_3.wav,./public/sounds/posty/posty_melody_4.wav,"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCollection Create (12.2ms)[0m  [1m[32mINSERT INTO "collections" ("name", "author", "created_at", "updated_at", "sounds") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Hip-Hop Inspired"], ["author", "Some Internet Dude"], ["created_at", "2019-09-10 19:16:51.079289"], ["updated_at", "2019-09-10 19:16:51.079289"], ["sounds", "{./public/sounds/posty/posty_beat_1.wav,./public/sounds/posty/posty_beat_2.wav,./public/sounds/posty/posty_beat_3.wav,./public/sounds/posty/posty_beat_4.wav,./public/sounds/posty/posty_drum_1.wav,./public/sounds/posty/posty_drum_2.wav,./public/sounds/posty/posty_drum_3.wav,./public/sounds/posty/posty_drum_4.wav,./public/sounds/posty/posty_guitar_1.wav,./public/sounds/posty/posty_guitar_2.wav,./public/sounds/posty/posty_guitar_3.wav,./public/sounds/posty/posty_guitar_4.wav,./public/sounds/posty/posty_melody_1.wav,./public/sounds/posty/posty_melody_2.wav,./public/sounds/posty/posty_melody_3.wav,./public/sounds/posty/posty_melody_4.wav}"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.36ms)
+Completed 201 Created in 52ms (Views: 25.8ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/collections/" for ::1 at 2019-09-10 15:16:54 -0400
+Processing by CollectionsController#index as HTML
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.96ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/sign-in" for ::1 at 2019-09-10 15:17:09 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+Completed 401 Unauthorized in 12ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 15:17:15 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.5ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.52ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/collections/69" for ::1 at 2019-09-10 15:17:17 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"69"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.25ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/68" for ::1 at 2019-09-10 15:20:14 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"68"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.3ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 15:21:42 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.74ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 15:22:47 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.87ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections/69" for ::1 at 2019-09-10 15:27:03 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"69"}
+  [1m[36mCollection Load (0.6ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.47ms)
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 15:27:14 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.64ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/collections/69" for ::1 at 2019-09-10 15:27:16 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"69"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.58ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-10 15:33:03 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mCollection Load (0.8ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.69ms)
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/collections/69" for ::1 at 2019-09-10 15:33:09 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"69"}
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mCACHE Collection Load (0.0ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.7ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
