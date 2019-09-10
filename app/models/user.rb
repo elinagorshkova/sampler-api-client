@@ -2,7 +2,5 @@
 
 class User < ApplicationRecord
   include Authentication
-  has_many :examples
-  has_many :favorites
-  has_many :collections, through: :favorites
+  has_many :collections
 end

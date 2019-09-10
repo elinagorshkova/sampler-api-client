@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_10_004943) do
+ActiveRecord::Schema.define(version: 2019_09_10_195606) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 2019_09_10_004943) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "sounds", default: [], array: true
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_collections_on_user_id"
   end
 
   create_table "examples", force: :cascade do |t|
@@ -40,6 +42,14 @@ ActiveRecord::Schema.define(version: 2019_09_10_004943) do
     t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
+  create_table "samples", force: :cascade do |t|
+    t.text "name"
+    t.text "author"
+    t.text "sounds"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.string "token", null: false
@@ -50,6 +60,7 @@ ActiveRecord::Schema.define(version: 2019_09_10_004943) do
     t.index ["token"], name: "index_users_on_token", unique: true
   end
 
+  add_foreign_key "collections", "users"
   add_foreign_key "examples", "users"
   add_foreign_key "favorites", "collections", column: "collections_id"
   add_foreign_key "favorites", "users"
