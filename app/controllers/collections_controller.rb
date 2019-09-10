@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-class CollectionsController < ApplicationController
-  before_action :set_collection, only: %i[show update destroy]
+class CollectionsController < OpenReadController
+  before_action :set_collection, only: %i[update destroy]
 
   # GET /collections
   def index
@@ -18,10 +18,10 @@ class CollectionsController < ApplicationController
 
   # POST /collections
   def create
-    @collection = Collection.new(collection_params)
+    @collection = current_user.collections.build(collection_params)
 
     if @collection.save
-      render json: @collection, status: :created, location: @collection
+      render json: @collection, status: :created
     else
       render json: @collection.errors, status: :unprocessable_entity
     end
@@ -39,17 +39,19 @@ class CollectionsController < ApplicationController
   # DELETE /collections/1
   def destroy
     @collection.destroy
+
+    head :no_content
   end
 
   private
 
     # Use callbacks to share common setup or constraints between actions.
-    def set_collection
-      @collection = Collection.find(params[:id])
-    end
+  def set_collection
+    @example = current_user.collections.find(params[:id])
+  end
 
     # Only allow a trusted parameter "white list" through.
-    def collection_params
-      params.require(:collection).permit(:name, :author, :sounds)
-    end
+  def collection_params
+    params.require(:collection).permit(:name, :author, :sounds)
+  end
 end
