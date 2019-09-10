@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2) do
+ActiveRecord::Schema.define(version: 2019_09_10_195606) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "collections", force: :cascade do |t|
+    t.string "name"
+    t.string "author"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "sounds", default: [], array: true
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_collections_on_user_id"
+  end
 
   create_table "examples", force: :cascade do |t|
     t.text "text", null: false
@@ -21,6 +31,23 @@ ActiveRecord::Schema.define(version: 2) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_examples_on_user_id"
+  end
+
+  create_table "favorites", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "collections_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["collections_id"], name: "index_favorites_on_collections_id"
+    t.index ["user_id"], name: "index_favorites_on_user_id"
+  end
+
+  create_table "samples", force: :cascade do |t|
+    t.text "name"
+    t.text "author"
+    t.text "sounds"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -33,5 +60,8 @@ ActiveRecord::Schema.define(version: 2) do
     t.index ["token"], name: "index_users_on_token", unique: true
   end
 
+  add_foreign_key "collections", "users"
   add_foreign_key "examples", "users"
+  add_foreign_key "favorites", "collections", column: "collections_id"
+  add_foreign_key "favorites", "users"
 end
