@@ -45,12 +45,12 @@ class CollectionsController < OpenReadController
 
   private
 
-    # Use callbacks to share common setup or constraints between actions.
+  # Use callbacks to share common setup or constraints between actions.
   def set_collection
-    @example = current_user.collections.find(params[:id])
+    @collection = current_user.collections.find(params[:id])
   end
 
-    # Only allow a trusted parameter "white list" through.
+  # Only allow a trusted parameter "white list" through.
   def collection_params
     params.require(:collection).permit(:name, :author, :sounds)
   end
