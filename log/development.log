@@ -16318,3 +16318,80 @@ Processing by CollectionsController#index as */*
 Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 1.0ms)
 
 
+Started POST "/sign-in" for ::1 at 2019-09-21 13:47:08 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"a@a", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@a"], ["LIMIT", 1]]
+  [1m[36mUser Update (6.5ms)[0m  [1m[33mUPDATE "users" SET "token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["token", "dacda62d28cde8b46edb1ed08967c150"], ["updated_at", "2019-09-21 17:47:08.779597"], ["id", 14]]
+[active_model_serializers]   [1m[36mCollection Load (1.9ms)[0m  [1m[34mSELECT "collections".* FROM "collections" WHERE "collections"."user_id" = $1[0m  [["user_id", 14]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (38.03ms)
+Completed 200 OK in 163ms (Views: 36.0ms | ActiveRecord: 24.8ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-21 13:47:12 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "dacda62d28cde8b46edb1ed08967c150"], ["LIMIT", 1]]
+  [1m[36mCollection Load (0.5ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (7.77ms)
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-21 13:47:26 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "dacda62d28cde8b46edb1ed08967c150"], ["LIMIT", 1]]
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.31ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/sign-out" for ::1 at 2019-09-21 13:47:31 -0400
+Processing by UsersController#signout as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "dacda62d28cde8b46edb1ed08967c150"], ["LIMIT", 1]]
+  [1m[36mUser Update (2.2ms)[0m  [1m[33mUPDATE "users" SET "token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["token", "720dfe95db3baaea96b2af358e2cf185"], ["updated_at", "2019-09-21 17:47:31.526163"], ["id", 14]]
+Completed 204 No Content in 4ms (ActiveRecord: 2.4ms)
+
+
+Started POST "/sign-in" for ::1 at 2019-09-21 13:48:31 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"a@a", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@a"], ["LIMIT", 1]]
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["token", "f13c1f58f07efda68a3187daf34a6ac9"], ["updated_at", "2019-09-21 17:48:31.182728"], ["id", 14]]
+[active_model_serializers]   [1m[36mCollection Load (0.4ms)[0m  [1m[34mSELECT "collections".* FROM "collections" WHERE "collections"."user_id" = $1[0m  [["user_id", 14]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (2.31ms)
+Completed 200 OK in 61ms (Views: 2.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/collections" for ::1 at 2019-09-21 13:48:33 -0400
+Processing by CollectionsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "f13c1f58f07efda68a3187daf34a6ac9"], ["LIMIT", 1]]
+  [1m[36mCollection Load (0.6ms)[0m  [1m[34mSELECT "collections".* FROM "collections"[0m
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (6.77ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/collections/4" for ::1 at 2019-09-21 13:48:34 -0400
+Processing by CollectionsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "f13c1f58f07efda68a3187daf34a6ac9"], ["LIMIT", 1]]
+  [1m[36mCollection Load (0.3ms)[0m  [1m[34mSELECT  "collections".* FROM "collections" WHERE "collections"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.5ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/sign-out" for ::1 at 2019-09-21 13:48:43 -0400
+Processing by UsersController#signout as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "f13c1f58f07efda68a3187daf34a6ac9"], ["LIMIT", 1]]
+  [1m[36mUser Update (1.8ms)[0m  [1m[33mUPDATE "users" SET "token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["token", "9759873609a733f2f63e5e123694ce44"], ["updated_at", "2019-09-21 17:48:43.540222"], ["id", 14]]
+Completed 204 No Content in 4ms (ActiveRecord: 2.1ms)
+
+
